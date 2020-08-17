@@ -2,12 +2,12 @@
 /**
  * get_env_path - function that gets the PATH route
  * @env: enviroment of thr system
- * Return: the PATH POSITION captured into environment 
+ * Return: the PATH POSITION captured into environment
 */
 
 char *get_env_path(char **env)
 {
-	int i; 
+	int i;
 	int j;
 	char compare[4] = "PATH";
 

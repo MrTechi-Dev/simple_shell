@@ -12,14 +12,14 @@ int _strlen(char *str)
 	{
 		i++;
 	}
-return (i);
+	return (i);
 }
 /**
-* _strcmp- function that compares two strings
-* @s1: primera string
-* @s2: segunda string
-*Return: return the comparation
-*/
+ * _strcmp- function that compares two strings
+ * @s1: primera string
+ * @s2: segunda string
+ *Return: return the comparation
+ */
 int _strcmp(char *s1, char *s2)
 {
 	int i;
@@ -31,7 +31,7 @@ int _strcmp(char *s1, char *s2)
 			return (0);
 		}
 	}
-return (s1[i] - s2[i]);
+	return (s1[i] - s2[i]);
 }
 /**
  * _strncat - function that concatenate an string
@@ -55,11 +55,11 @@ char *_strncat(char *dest, char *src, int n)
 	return (dest);
 }
 /**
-**_strcpy-function that copy an array
-*@dest: variable that copy the array
-*@src: array to copy from
-*Return: the array copied  to dest
-*/
+ **_strcpy-function that copy an array
+ *@dest: variable that copy the array
+ *@src: array to copy from
+ *Return: the array copied  to dest
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int i;
@@ -87,9 +87,9 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = src[i];
 	}
-for ( ; i < n ; i++)
-{
-dest[i] = '\0';
-}
+	for ( ; i < n ; i++)
+	{
+		dest[i] = '\0';
+	}
 	return (dest);
 }

@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * execute_command -  Execute a command prompt by the user in the shell
+ * execute_cmd -  Execute a command prompt by the user in the shell
  * @commands: array of commands
  * @line: line pointer
  * @env: environment varibale
@@ -36,3 +36,4 @@ bool execute_cmd(char **commands, char *line, char **env)
 	}
 	return (command);
 }
+

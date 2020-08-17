@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * exec_routes - functions that receive commands into the  directores 
+ * exec_routes - functions that receive commands into the  directores
  *  on a string type and try one by one to execv function
  * @commands: Array of commands
  * @line: Pointer to line
