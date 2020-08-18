@@ -1,0 +1,50 @@
+.TH  man_1_simple_shell "13 August 2020" " " "Simple Shell Project"
+.SH NAME
+.B SSP
+-
+.B Simple Shell Project
+.SH SYNOPSIS
+SSP [command string]
+.PP
+.SH DESCRIPTION
+The Simple Shell project is a simple UNIX command interpreter.
+This manual page explains the work flow and implementation cases, this program
+ will execute directly any other
+software that you want to execute in your system if it can find it directly, or
+in your PATH environment variable.
+
+
+Each input receive in interactive mode will increase the line counter, if a
+ command can not be found or execute it will return the line counter, and the
+ respective message inmediatly.
+
+
+
+.PP
+.SH SHELL BUILT-IN COMMANDS
+.SS env
+    Print the environment variables to STDOUT
+.SS exit
+    Exit the shell.
+.SH COMMAND EXECUTION
+After a command is read by the interpreter, it will be split into tokens.
+ Depending on input, the  following actions will take place
+.PP
+ If the command is a builtin, the Shell will  search the PATH variable
+ for the directory containing the command.
+.PP
+If the search is  successful,  the shell executes the command
+.SH  ENVIRONMENT
+When a program is invoked, it is given an array of strings
+ called the environment.
+.SH PROMPT
+The shell will display the prompt through the PS1,
+ ready to take the next command.
+.PP
+.SHS SEE ALSO
+bash(1), csh(1), ksh(1), printf(1), login(1), echo(1), getopt(1), test(1)
+.SH BUGS
+No known bugs.
+.SH AUTHORS
+ANDRES BARRERA
+GUSTAVO TOVAR
