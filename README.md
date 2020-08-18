@@ -96,7 +96,7 @@ Kenneth Lane Thompson is an American pioneer of computer science. He worked at B
 
 ### What is a pid and a ppid
 
-![PID-PPID](https://raw.githubusercontent.com/Andres802/SHELL-PICS/master/PPID_Flow_Chart.pdf)
+![PID-PPID](https://raw.githubusercontent.com/Andres802/SHELL-PIC-2/master/PID_Flow_chart.png)
 
 ### How to manipulate the environment of the current process`
 
@@ -113,7 +113,7 @@ Actually, every process comes with an environment. When a new process is created
 
 The main difference  between system call and function call is that a  **system call is a request for the kernel to access a resource while a function call is a request made by a program to perform a specific task.**
 
-![SYSTEM-FUNCTION-CALL](https://raw.githubusercontent.com/Andres802/SHELL-PICS/master/SystemCallvsFunc.pdf)
+![SYSTEM-FUNCTION-CALL](https://raw.githubusercontent.com/Andres802/SHELL-PIC-2/master/System_call_fuction_calls_flow.png)
 
 ###   How to create processes
 
@@ -177,10 +177,10 @@ It is an acronym for ‘End Of File’. It refers to a state that may occur whil
 ## FlowCharts
 
 ![Main Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PIC-2/master/1269%40holbertonschool.com.png)
-![Parse Input Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PICS/master/parse_%20input_strtok.pdf)
-![Validation Fork Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PICS/master/Fork_validate.pdf)
-![Free Tokens Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PICS/master/Free_tokens_flow.pdf)
-![Shell](https://raw.githubusercontent.com/Andres802/SHELL-PICS/master/process_stdin_stdout_stderr_return-code.png)
+![Parse Input Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PIC-2/master/parse_input_strtok.png)
+![Validation Fork Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PIC-2/master/Fork_flow_process.png)
+![Free Tokens Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PIC-2/master/Free_token_flow_chart.png)
+
 
 ## Installation
 
