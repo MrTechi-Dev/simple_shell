@@ -4,10 +4,12 @@
 -
 .B Simple Shell Project
 .SH SYNOPSIS
-SSP [command string]
-.PP
-.SH DESCRIPTION
+.B ./hsh
+[command] [options]
 The Simple Shell project is a simple UNIX command interpreter.
+
+.SH DESCRIPTION
+
 This manual page explains the work flow and implementation cases, this program
  will execute directly any other
 software that you want to execute in your system if it can find it directly, or
@@ -18,31 +20,190 @@ Each input receive in interactive mode will increase the line counter, if a
  command can not be found or execute it will return the line counter, and the
  respective message inmediatly.
 
+.B Overview
+This simple shell is a simplification of a command interpreter, similar to
+.B bash.
+.TP
+ Command [option]...	ls -la
 
-
-.PP
 .SH SHELL BUILT-IN COMMANDS
 .SS env
     Print the environment variables to STDOUT
 .SS exit
+
+
     Exit the shell.
 .SH COMMAND EXECUTION
 After a command is read by the interpreter, it will be split into tokens.
+
  Depending on input, the  following actions will take place
 .PP
  If the command is a builtin, the Shell will  search the PATH variable
+.SH OPTIONS
+Simple Shell
+operates in both
+.I interactive
+and
+.I non-interactive
+mode. The user may initiate
+.B simple shell
+and begin working or initate
+.B simple shell
+using commands meant to be run by the program.
+.SH ARGUMENTS
+The first argument, argument 0 is understood to be the command to be run by
+.B simple shell
+and arguments following as modifier or options.
+
+.B Return value
+
+The return value of a simple command is its exit status. returns various values depending on the success of the program execution or if an error occurred.
+
  for the directory containing the command.
 .PP
+
 If the search is  successful,  the shell executes the command
+
+.SH ARGUMENTS
+The first argument, argument 0 is understood to be the command to be run by
+.B simple shell
+and arguments following as modifier or options.
+
+.B Return value
+
+The return value of a simple command is its exit status. returns various values depending on the success of the program execution or if an error occurred.
+
+.B Example
+.PP
+
+$./hsh
+
+$ touch hello.txt
+
+$ ls
+
+.RS 3
+firts.txt
+.TB
+hello.txt
+.TB
+second.txt
+.RE
+$ |
+
+.RS +4
+[$ ./hsh
+.RE
+.RS +4
+[$ /bin/ls
+.RE
+.RS +4
+hsh firts.txt hello.txt second.txt
+.RE
+.RS +4
+$
+.RE
+.RS +4
+[$ exit
+.RE
+.RS +4
+$
+
+.RE
+.B Run pwd command:
+.RS +4
+[$ pwd
+.RE
+.RS +4
+/home/vagrant/simple_shell
+.RE
+
+.RE
+.B Run exit command:
+.RS +4
+[$ exit
+.RE
+.RS +4
+vagrant@vagrant-ubuntu-trusty-64:~/simple_shell$
+.RE
+
+.B Non-interactive mode:
+
+.RS +4
+$ echo "/bin/ls" | ./hsh
+.RE
+.RS +4
+firts.txt hello.txt second.txt test_ls_2
+.RE
+.RS +4
+$
+.RE
+.RS +4
+$ cat test_ls_2
+.RE
+.RS +4
+/bin/ls
+.RE
+.RS +4
+/bin/ls
+.RE
+.RS +4
+$
+.RE
+.RS +4
+$ cat test_ls_2 | ./hsh
+.RE
+.RS +4
+hsh main.c shell.c test_ls_2
+.RE
+.RS +4
+hsh main.c shell.c test_ls_2
+.RE
+.RS +4
+$
+.PP
+
+.SH RESERVED WORDS
+
+.B exit:
+quits the program, exit the shell.
+
+.B env:
+displays a list of environment variables
+
+
+.SH RESERVED KEY-WORDS
+
+.B ctrl + D:
+quits the program, exit the shell, similar to command exit.
+
+.B ctrl + C:
+ends the process that is running, useful to regain control of the system.
+
+.SH SEE ALSO
+.I sh(1)
+,
+.I bash(1)
+.SH BUGS
 .SH  ENVIRONMENT
 When a program is invoked, it is given an array of strings
  called the environment.
+
 .SH PROMPT
 The shell will display the prompt through the PS1,
  ready to take the next command.
-.PP
+
 .SHS SEE ALSO
 bash(1), csh(1), ksh(1), printf(1), login(1), echo(1), getopt(1), test(1)
+
+
+.TP
+ Command [option]...	ls -la
+
+.SH OPTIONS
+
+
+
 .SH BUGS
 No known bugs.
 .SH AUTHORS
