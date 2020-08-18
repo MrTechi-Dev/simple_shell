@@ -176,7 +176,7 @@ It is an acronym for ‘End Of File’. It refers to a state that may occur whil
 
 ## FlowCharts
 
-![Main Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PIC-2/master/flow_chart_execv_func.png?token=ADWO2TL4NX7GA75LXB4FGKK7HRLUI)
+![Main Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PIC-2/master/1269%40holbertonschool.com.png)
 ![Parse Input Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PICS/master/parse_%20input_strtok.pdf)
 ![Validation Fork Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PICS/master/Fork_validate.pdf)
 ![Free Tokens Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PICS/master/Free_tokens_flow.pdf)
