@@ -180,7 +180,7 @@ It is an acronym for ‘End Of File’. It refers to a state that may occur whil
 ![Parse Input Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PICS/master/parse_%20input_strtok.pdf)
 ![Validation Fork Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PICS/master/Fork_validate.pdf)
 ![Free Tokens Flow Chart](https://raw.githubusercontent.com/Andres802/SHELL-PICS/master/Free_tokens_flow.pdf)
-
+![Shell](https://raw.githubusercontent.com/Andres802/SHELL-PICS/master/process_stdin_stdout_stderr_return-code.png)
 
 ## Installation
 
