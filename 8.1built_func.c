@@ -41,7 +41,6 @@ void free_arrays(char **array)
 
 	while (array[j])
 	{
-		free(array[j]);
 		j++;
 	}
 	if (array[j] == NULL)

@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
  * main - main function of the Shell
- * @ac: Is the number of input of arguments
+ * @ac: Is the numbers of input of arguments
  * @av: the arguments type string in the array
  * @env: enviroment variable.
  * Return: 0 on succesfull completion
