@@ -9,7 +9,7 @@ char **parse_input(char *buf)
 	char **all_tokens = NULL;
 	char *token = NULL;
 	int j = 0;
-	int counter;
+	int counter = 0;
 	int x;
 
 	if (!buf)
