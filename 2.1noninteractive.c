@@ -45,5 +45,5 @@ int noninteractive(char **env)
 		if (isatty(STDIN_FILENO) == 1)
 			write(STDOUT_FILENO, PROMPT, 2);
 	}
-	return (1);
+	return (0);
 }

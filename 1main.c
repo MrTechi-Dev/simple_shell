@@ -21,6 +21,6 @@ int main(int ac, char **av, char **env)
 	{
 		noninteractive(env);
 	}
-	/*exit(0);*/
-	return (1);
+	exit(0);
+	return (0);
 }
