@@ -25,6 +25,7 @@ void print_environment(void)
 void exit_shell(char *line, char **cmd)
 {
 	free(line);
+	free(cmd);
 	free_arrays(cmd);
 	exit(EXIT_SUCCESS);
 }
