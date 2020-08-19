@@ -6,7 +6,7 @@
 void signalhandle(int n __attribute__((unused)))
 {
 	write(STDERR_FILENO, "\n", 1);
-	write(STDERR_FILENO, "$hell ", 6);
+	write(STDERR_FILENO, "$ ", 2);
 }
 /**
  * ctrl_c - function that handle ctrl c signal from user
@@ -38,7 +38,7 @@ void fork_error(char *line, char **commands)
 void free_arrays(char **array)
 {
 	
-	int j = 1;
+	unsigned int j = 1;
 
 	while (array[j])
 	{
@@ -47,5 +47,5 @@ void free_arrays(char **array)
 	}
 	if (array[j] == NULL)
 		free(array[j]);
-	free(array);
+		free(array);
 }

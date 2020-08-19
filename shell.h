@@ -27,6 +27,7 @@ bool execute_cmd(char **commands, char *line, char **env);
 char *get_env_path(char **env);
 bool exec_routes(char **commands, char *line, char **env);
 char **get_route(char **commands, char **env);
+int noninteractive(char **env);
 
 
 

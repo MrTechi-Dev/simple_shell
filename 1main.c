@@ -14,12 +14,12 @@ int main(int ac, char **av, char **env)
 
 	if (isatty(STDIN_FILENO) == 1)
 	{
-		write(STDOUT_FILENO, "$hell ", 6);
+		write(STDOUT_FILENO, "$ ", 2);
 		prompt(env);
 	}
 	else
 	{
-		prompt(env);
+		noninteractive(env);
 	}
 	exit(0);
 	return (0);
