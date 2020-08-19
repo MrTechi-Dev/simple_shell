@@ -11,7 +11,7 @@ char **get_route(char **commands, char **env)
 	char *path = NULL, **dir_path = NULL, *token = NULL;
 	int num_dir = 0, w, i, len_comm = 0, len_dir = 0, k, j;
 
-	path = get_env_path(env);
+	path = get_env_path(env, "PATH");
 	for (w = 0; path[w] != '\0'; w++)
 	{
 		if (path[w + 1] == ':' || path[w + 1] == '\0')

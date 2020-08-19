@@ -24,7 +24,7 @@ extern char **environ;
 int interactive(char **env);
 char **parse_input(char *buf);
 bool execute_cmd(char **commands, char *line, char **env);
-char *get_env_path(char **env);
+char *get_env_path(char **env, char *compare);
 bool exec_routes(char **commands, char *line, char **env);
 char **get_route(char **commands, char **env);
 int noninteractive(char **env);
@@ -40,6 +40,7 @@ void fork_error(char *line, char **commands);
 void free_arrays(char **array);
 void print_environment(void);
 void exit_shell(char *line, char **cmd);
+void excutefalse(char *line, char **commands);
 
 
 

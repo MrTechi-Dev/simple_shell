@@ -26,24 +26,22 @@ int interactive(char **env)
 		{
 			execute = execute_cmd(commands, line, env);
 			if (execute == false)
-			{
-				perror("COMMAND NOT FOUND");
-				free(line), free_arrays(commands), exit(EXIT_FAILURE);
-			}
+			excutefalse(line, commands);
 		}
 		else /* ====== if it is parent ====*/
 		{
 			wait(&status);
-			if (commands == NULL)
-				free(line), free_arrays(commands);
+			if (commands == NULL)/*free(line);*/
+				free_arrays(commands);
 			else if ((_strcmp("exit", commands[0])) == 0)
 				exit_shell(line, commands);
-			else
-				free(line), free_arrays(commands);
+			else/*free(line);*/
+				free_arrays(commands);
 		}
-		n = 0, line = NULL;
+		n = 0; /*line = NULL;*/
 		if (isatty(STDIN_FILENO) == 1)
 			write(STDOUT_FILENO, PROMPT, 2);
+		free(line);
 	}
 	return (0);
 }

@@ -28,3 +28,15 @@ void exit_shell(char *line, char **cmd)
 	free_arrays(cmd);
 	exit(EXIT_SUCCESS);
 }
+/**
+ * excutefalse - Function that frees memory allocated
+ * @line: buffer of memory allocated
+ * @commands: input from command user
+ */
+void excutefalse(char *line, char **commands)
+{
+	perror("COMMAND NOT FOUND");
+	free(line);
+	free_arrays(commands);
+	exit(EXIT_FAILURE);
+}

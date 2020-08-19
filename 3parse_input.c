@@ -18,15 +18,15 @@ char **parse_input(char *buf)
 	buf[_strlen(buf) - 1] = '\0';
 /* Checking number of delimiters to know how many*/
 /* spaces will be open in the tokenazation*/
-	x = 0;
-	for (; buf[x] != '\0'; x++)
+	for (x = 0; buf[x] != '\0'; x++)
 	{
-		if (buf[x] != ' ')
+		if (buf[x] != ' ')/* si el caracter es valido*/
 		{
-			if (buf[x + 1] == ' ' || buf[x + 1] == '\0')
-				counter++;
+			counter++;
+			/*if (buf[x + 1] == ' ' || buf[x + 1] == '\0');*/
 		}
 	}
+	/*printf("valor del counter %d \n", counter);*/
 	if (counter == 0)
 	{
 		return (all_tokens);
