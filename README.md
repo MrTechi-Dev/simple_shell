@@ -198,7 +198,7 @@ git clone https://github.com/Andres802/simple_shell.git
 
 ## Execute the simple shell
 
-Afters installing the shell you can run it in interactive mode or non-interactive mode
+After installing the shell you can run it in interactive mode or non-interactive mode
 
 ```
 cd simple_shell/
