@@ -17,7 +17,7 @@
 extern char **environ;
 
 /* Macros */
-#define PROMPT "(> ''>) andrescode$ "
+#define PROMPT "$ "
 #define WHITESPACE " \n\r\t"
 
 /* Prototypes */
@@ -40,6 +40,7 @@ void fork_error(char *line, char **commands);
 void free_arrays(char **array);
 void print_environment(void);
 void exit_shell(char *line, char **cmd);
+
 
 
 

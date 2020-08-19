@@ -6,7 +6,7 @@
 void signalhandle(int n __attribute__((unused)))
 {
 	write(STDERR_FILENO, "\n", 1);
-	write(STDERR_FILENO, "$ ", 2);
+	write(STDERR_FILENO, PROMPT, 2);
 }
 /**
  * ctrl_c - function that handle ctrl c signal from user
@@ -37,15 +37,17 @@ void fork_error(char *line, char **commands)
  */
 void free_arrays(char **array)
 {
-	
-	unsigned int j = 1;
+	int i;
 
-	while (array[j])
+	if (array == NULL)
+		return;
+	i = 2;
+	while (array[i])
 	{
-		free(array[j]);
-		j++;
+		free(array[i]);
+		i++;
 	}
-	if (array[j] == NULL)
-		free(array[j]);
-		free(array);
+	if (array[i] == NULL)
+		free(array[i]);
+	free(array);
 }

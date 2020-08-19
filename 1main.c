@@ -14,7 +14,7 @@ int main(int ac, char **av, char **env)
 
 	if (isatty(STDIN_FILENO) == 1)
 	{
-		write(STDOUT_FILENO, "$ ", 2);
+		write(STDOUT_FILENO, PROMPT, 2);
 		prompt(env);
 	}
 	else

@@ -43,7 +43,7 @@ int noninteractive(char **env)
 		}
 		n = 0, line = NULL;
 		if (isatty(STDIN_FILENO) == 1)
-			write(STDOUT_FILENO, "$ ", 2);
+			write(STDOUT_FILENO, PROMPT, 2);
 	} /* === E N D  O F  T H E  W H I L E  LOOP === */
 	return (0);
 }

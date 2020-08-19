@@ -31,11 +31,11 @@ int prompt(char **env)
 				free(line), free_arrays(commands), exit(EXIT_FAILURE);
 			}
 		}
-		else
+		else /* ====== if it is parent ====*/
 		{
 			wait(&status);
 			if (commands == NULL)
-				free(line), free_arrays(commands), exit(EXIT_FAILURE);
+				free(line), free_arrays(commands);
 			else if ((_strcmp("exit", commands[0])) == 0)
 				exit_shell(line, commands);
 			else
@@ -43,7 +43,7 @@ int prompt(char **env)
 		}
 		n = 0, line = NULL;
 		if (isatty(STDIN_FILENO) == 1)
-			write(STDOUT_FILENO, "$ ", 2);
-	} /* === E N D  O F  T H E  W H I L E  LOOP === */
+			write(STDOUT_FILENO, PROMPT, 2);
+	}
 	return (0);
 }
