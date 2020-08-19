@@ -22,6 +22,7 @@ bool execute_cmd(char **commands, char *line, char **env)
 	else if ((_strcmp("env", commands[0])) == 0)
 	{
 		print_environment();
+		free(commands);
 		command = true;
 	}
 	/* ======== TRY THE ROUTE WITH THE FORMAT $/bin/ls ============ */
