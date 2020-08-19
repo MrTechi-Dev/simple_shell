@@ -37,6 +37,7 @@ int interactive(char **env)
 				exit_shell(line, commands);
 			else/*free(line);*/
 				free_arrays(commands);
+				/*free(line);*/
 		}
 		n = 0; /*line = NULL;*/
 		if (isatty(STDIN_FILENO) == 1)
