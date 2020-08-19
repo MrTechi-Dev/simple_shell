@@ -45,5 +45,5 @@ int interactive(char **env)
 		if (isatty(STDIN_FILENO) == 1)
 			write(STDOUT_FILENO, PROMPT, 2);
 	}
-	return (0);
+	return (1);
 }
