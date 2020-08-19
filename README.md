@@ -20,7 +20,7 @@
 *  All files will be compiled on **Ubuntu** 14.04 LTS
 * C programs and functions will be compiled with  `**gcc**`  using the flags  `-Wall`  `-Werror``-Wextra`  `and -pedantic`
 * Files should end with a new line
-* Use the  `Betty`  style. 
+* Use the  `Betty`  style.
 * The shell should not have any memory leaks
 * No more than 5 functions per file
 * All header files should be include guarded
