@@ -1,7 +1,8 @@
 #include "shell.h"
 /**
- * parse_input - function to divide the arguments into different strings with tokens
- * @buf: pointer to a string of the command 
+ * parse_input - function to divide the arguments
+ * into different strings with tokens
+ * @buf: pointer to a string of the command
  * Return: a variable contain the command
  */
 char **parse_input(char *buf)

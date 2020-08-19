@@ -1,10 +1,10 @@
 #include "shell.h"
 /**
- * prompt - shell in interactive mode (user interaction)
+ * interactive - shell in interactive mode (user interaction)
  * @env: enviroment of the system by default
  * Return: 0 on success or -1 if it fails
  */
-int prompt(char **env)
+int interactive(char **env)
 {
 	char *line = NULL,  **commands = NULL;
 	size_t n;

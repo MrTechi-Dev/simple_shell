@@ -21,7 +21,7 @@ extern char **environ;
 #define WHITESPACE " \n\r\t"
 
 /* Prototypes */
-int prompt(char **env);
+int interactive(char **env);
 char **parse_input(char *buf);
 bool execute_cmd(char **commands, char *line, char **env);
 char *get_env_path(char **env);
