@@ -1,9 +1,9 @@
 #include "shell.h"
 /**
  * execute_cmd -  Execute a command prompt by the user in the shell
- * @commands: array of commands
- * @line: line pointer
- * @env: environment varibale
+ * @commands: array of commands, prompt by the user
+ * @line: line pointer (memory address)
+ * @env: environment varibale by default
  * Return: true on succes or  failure if it bool fails
  */
 bool execute_cmd(char **commands, char *line, char **env)
@@ -15,10 +15,10 @@ bool execute_cmd(char **commands, char *line, char **env)
 		free(line);
 		exit(EXIT_SUCCESS);
 	}
-	/* =======E X I T   F U N C T I O N   B U I L T  I N ======*/
+	/* =======E X I T   F U N C T I O N  ======*/
 	else if ((_strcmp("exit", commands[0])) == 0)
 		exit_shell(line, commands);
-	/*===== E N V   F U N C T I O N   B U I L T  I N ========*/
+	/*===== E N V   F U N C T I O N  ========*/
 	else if ((_strcmp("env", commands[0])) == 0)
 	{
 		print_environment();

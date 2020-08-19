@@ -37,17 +37,17 @@ void fork_error(char *line, char **commands)
  */
 void free_arrays(char **array)
 {
-	int i;
+	int j;
 
 	if (array == NULL)
 		return;
-	i = 2;
-	while (array[i])
+	j = 10;
+	while (array[j])
 	{
-		free(array[i]);
-		i++;
+		free(array[j]);
+		j++;
 	}
-	if (array[i] == NULL)
-		free(array[i]);
+	if (array[j] == NULL)
+		free(array[j]);
 	free(array);
 }

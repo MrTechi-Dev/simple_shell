@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
  * prompt - shell in interactive mode (user interaction)
- * @env: enviroment of the system
+ * @env: enviroment of the system by default
  * Return: 0 on success or -1 if it fails
  */
 int prompt(char **env)
