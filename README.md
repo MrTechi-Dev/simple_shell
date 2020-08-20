@@ -219,7 +219,7 @@ cd simple_shell/
 Example/./test
 ```
 
-## 
+
 
 ## Social networks
 
