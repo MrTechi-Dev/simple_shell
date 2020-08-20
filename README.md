@@ -1,5 +1,4 @@
 #  0x16. C - Simple Shell
-![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
 
 ## Resources
 
@@ -13,7 +12,6 @@
 ## man execute
 man ./man_page
 
-* `sh`  (_Run  `sh`  as well_)
 
 ## General Requirements
 
