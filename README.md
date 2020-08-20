@@ -10,7 +10,8 @@
 * [Ken Thompson](https://intranet.hbtn.io/rltoken/G_kMmrcR7rm3uXsiVk1F0w "Ken Thompson")
 * [Everything you need to know to start coding your own shell](https:///rltoken/NLmjz6DsgyNjdD7GwL6VRA)
 
-**man or help**:
+## man execute
+man ./man_page
 
 * `sh`  (_Run  `sh`  as well_)
 
