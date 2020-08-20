@@ -226,6 +226,6 @@ Example/./test
 
 ## Social networks
 
-Follow us on Twitter 
+Follow us on Twitter
 Andres Barrera [![Andres Barrera](http://i.imgur.com/tXSoThF.png)](https://twitter.com/codesectest) 
 Gustavo Tovar [![Gustavo Tovar](http://i.imgur.com/tXSoThF.png)](https://twitter.com/gustavo55432603)
