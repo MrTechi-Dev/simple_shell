@@ -9,15 +9,15 @@
 char **get_route(char **commands, char **env)
 {
 	char *path = NULL, **dir_path = NULL, *token = NULL;
-	int num_dir = 0, w, i, len_comm = 0, len_dir = 0, k, j;
+	int counter = 0, l, i, len_comm = 0, len_dir = 0, k, j;
 
 	path = get_env_path(env, "PATH");
-	for (w = 0; path[w] != '\0'; w++)
+	for (l = 0; path[l] != '\0'; l++)
 	{
-		if (path[w + 1] == ':' || path[w + 1] == '\0')
-			num_dir++;
+		if (path[l + 1] == ':' || path[l + 1] == '\0')
+			counter++;
 	}
-	dir_path = malloc(sizeof(char *) * (num_dir + 1));
+	dir_path = malloc(sizeof(char *) * (counter + 1));
 	if (dir_path == NULL)
 		return (NULL);
 	i = 0;
