@@ -221,8 +221,7 @@ Example/./test
 
 ## To Do
 
- - [ ] Read files instead of standar input
- 
+ - [ ] Read
 
 ## Social networks
 
