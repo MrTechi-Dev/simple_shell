@@ -222,7 +222,7 @@ Example/./test
 ## To Do
 
  - [ ] Read files instead of standar input
- - [ ] Manage pipelines
+ 
 
 ## Social networks
 
