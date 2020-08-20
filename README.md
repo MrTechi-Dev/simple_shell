@@ -118,7 +118,7 @@ The main difference  between system call and function call is that a  **system c
 ###   How to create processes
 
 ![CHILD-PROCESS](https://i.ibb.co/0tktK2X/child-process.png)
- 
+
 The system call `fork` creates a new child process, almost identical to the parent (the process that calls `fork`). Once `fork` successfully returns, two processes continue to run the same program, but with different stacks, datas and heaps.
 
 Using the return value of `fork`, it is possible to know if the current process is the father or the child: `fork` will return `0` to the child, and the PID of the child to the father.
