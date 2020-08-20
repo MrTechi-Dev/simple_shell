@@ -206,7 +206,7 @@ cd simple_shell/
 $ls
 $exit
 ```
-## No interactive
+## No interactive mode
 ```
 cd simple_shell/
 echo "ls" | ./hsh
