@@ -219,9 +219,7 @@ cd simple_shell/
 Example/./test
 ```
 
-## To Do
-
- - [ ] Read
+## 
 
 ## Social networks
 
